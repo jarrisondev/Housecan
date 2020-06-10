@@ -1,0 +1,436 @@
+ /*estilos normalizar*/
+ :root{
+     --color-p:rgb(51, 51, 51);
+ }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #D8D8D8;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container{
+    width:68%;
+    margin:auto;
+}
+
+p::selection, h1::selection, h5::selection, img::selection, a::selection {
+    color:white;
+    background:#6DD527;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #6DD527;
+    border-radius:5px;
+    border-right:2px solid #D8D8D8;
+}
+                                            /* comienzan estilos del header */
+.header{
+    width:100%;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+/* comienzo, header logo */
+.header__logo{
+    display:flex;
+    align-items: center;
+    grid-column: 1/4;
+}
+
+.header__logo > img{
+    width:100px;
+} 
+
+.header__logo > h1{
+    font-size: 25px;
+    display: inline-block;
+    margin:0;
+    padding-top:20px;
+    color:var(--color-p);
+}
+/* termina, header logo */
+
+
+/* comienza, header botón */
+.header__boton {
+    height: 25px;
+    min-width: 160px;
+    width: auto;
+    margin-top:25px;
+    background: #6DD527;
+    color:white;
+    text-decoration:none;
+    font-size:1em;
+    font-weight: 700;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 9/11;
+}
+/* termina, header botón */
+
+
+/* comienza, header cop */
+.header > .header__cop{
+    font-weight: 700;
+    font-size:22px;
+    color:var(--color-p);
+    grid-column: 12/13;
+    margin-top: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+/* termina, header cop */
+                                    /* Terminan los estilos del header */
+                                    /* Comienzan los estilos del main */
+
+.main{
+    background-color: white;
+    width: 100%;
+}
+
+/* comienza, main banner */
+.main__banner {
+    width: auto;
+}
+.main__banner > .banner__img > img:nth-child(1){
+    width:100%;
+}
+
+.main__banner > .banner__img > img:nth-last-child(1){
+    display:none;
+}
+/* termina, main banner */
+
+.main__recomend > p{
+    color:var(--color-p);
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+
+/* comienza, main  tarjetas */
+
+.recomend__targ{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top:40px;
+}
+
+.recomend__targ .targ__targ{
+    width:210px;
+    background:rgb(236, 236, 236);
+    margin-bottom:20px;
+}
+
+.recomend__targ .targ__targ:hover{
+background:rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+.targ__targ .r_targ__img img {
+    width:100%;
+    height: 150px;
+}
+
+.targ__targ .r_targ__titulo p {
+    font-size:20px;
+    font-weight:600;
+    color:var(--color-p);
+}
+.targ__targ .r_targ__elementos {
+    color:rgb(114, 114, 114);
+    font-size:17px;
+    font-weight:600;
+    height:90px;
+}
+
+.targ__targ .r_targ__precio p {
+    color:#6DD527;
+    font-weight:600;
+    font-size:19px;
+    text-align: end;
+    margin:0 8px 6px 0;
+}
+/* termina, main recomend */
+
+
+/* comienza, main ubicacion */
+
+.main__ubicacion > p {
+    color:var(--color-p);
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.ubicacion{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ubicacion__targ{
+    display:flex;
+    flex-direction: column;
+    margin:40px 0;
+}
+
+.u__targ{
+    display: grid;
+    grid-template-columns: 110px auto auto;
+    grid-template-rows:auto auto;
+    max-width:345px;
+    margin-bottom:10px;
+    background:rgb(236, 236, 236);
+}
+
+.u__targ:hover{
+    background:rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+.u__targ .u_targ__img{
+    width:110px;
+    grid-column: 1/1; 
+    grid-row:1/3;
+}
+
+.u__targ .u_targ__img img{
+    width: 100%;
+}
+
+.u__targ .u_targ__titulo {
+    color:var(--color-p);
+    font-size:17px;
+    font-weight:700;
+    grid-column: 2/4;
+    grid-row:1/1;
+    margin:6px 9px;
+}
+
+.u__targ .u_targ__precio {
+    color:#6DD527;
+    font-size:17px;
+    font-weight: 600;
+    grid-row:2;
+    grid-column: 3/4;
+    margin:0 10px;    
+}
+
+.ubicacion .ubicacion__mapa{
+    margin:40px 0;
+}
+
+iframe{
+        width: 345px;
+    }
+/* termina, main ubicacion */
+
+
+                                     /* terminan los estilos del main */
+                                 /*comienzan los estilos del footer  */
+
+.footer__quienSoy{
+    background:#444547;
+    display:flex;
+    justify-content: space-between;
+    padding:2%;     
+}
+
+.quienSoy__descrip{
+    width: 350px;
+    text-align: justify;
+}
+.quienSoy__descrip h5{
+    font-size:22px;
+    color:#6DD527;
+}
+.quienSoy__descrip p{
+    color: rgb(226, 226, 226);
+    font-size: 18px;
+    padding: 5px 0 0 10px;
+}
+
+.quienSoy__rSocial{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.quienSoy__rSocial a img{
+    width:75px;
+}
+
+.quienSoy__rSocial a:nth-of-type(1) img{
+    width: 30px;
+    margin:5px 0 0 25px;
+}
+
+.footer__dAutor{
+    color:white;
+    background: black;
+    text-align: center;
+    padding:2%;
+    margin-bottom:20px;
+}
+
+
+                                    /* sistema responsive */
+
+
+        /* viewport min 1090 */
+@media screen and (max-width:1090px){
+    .container{
+        width: 90%;
+        margin:auto;
+    }
+    iframe{
+        margin: 0 7px;
+    }
+}
+
+        /* viewport min 800 */
+@media screen and (max-width:800px){
+    .container{
+        width: 85%;
+        margin:0 auto;
+    }
+
+    .header{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top:15px;
+    }
+    
+    .header__logo{
+        display:flex;
+        align-items: center;
+    }
+
+    .header__boton{
+        height: 25px;
+        min-width: 160px;
+        width: auto;
+        margin-top:25px;
+        background: #6DD527;
+        color:white;
+        text-decoration:none;
+        font-size:1em;
+        font-weight: 700;
+        border-radius: 5px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .header > .header__cop{
+        display:none;
+    }
+
+
+    .recomend__targ .targ__targ{
+        width:220px;
+        background:rgb(236, 236, 236);
+        margin-bottom:10px;
+        margin:10px 15px 18px;
+    }
+
+    .ubicacion .ubicacion__mapa{
+        margin:10px 0;
+    }
+
+    .footer__dAutor{
+        margin:0;
+    }
+    
+}
+
+                /* viewport min 560 */
+@media screen and (max-width:560px){
+    .container{
+        width: 100%;
+    }
+    .header__boton{
+        height: 25px;
+        min-width: 200px;
+        width: auto;
+        background: #6DD527;
+        color:white;
+        text-decoration:none;
+        font-size:1.2em;
+        font-weight: 700;
+        border-radius: 5px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin:13px 0 13px 8px;
+    }
+    .header{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .header__logo{
+        width: 200px;
+        display:flex;
+        justify-content: center;
+    }
+    .header__logo > h1{
+        display: none;
+    }
+    
+    .main__banner {
+        width: auto;
+        margin-top:20px;
+    }
+    
+    .main__banner > .banner__img > img:nth-child(1){
+        display:none;
+    }
+    .main__banner > .banner__img > img:nth-last-child(1){
+        display:initial;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .recomend__targ .targ__targ{
+        width:230px;
+        background:rgb(236, 236, 236);
+        margin-bottom:10px;
+        margin:10px 20px 10px;
+    }
+
+    iframe{
+        margin:0;
+    }
+
+    .quienSoy__descrip{
+        width: 300px;
+        text-align: justify;
+    }
+}
+
+            /* viewport min 354 */
+@media screen and (max-width:354px){
+    iframe{
+        margin:0;
+        width: auto;
+    }
+}
