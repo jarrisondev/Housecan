@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Bienvenidos a Housecan, sitio creado por Jarrison Cano." />
+		<!-- open graph -->
+		<meta property="og:title" content="¡Housecan!" />
+		<meta property="og:description" content="Bienvenidos a Housecan, sitio creado por Jarrison Cano." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://jarrisoncano.github.io/Housecan/" />
+		<meta property="og:image" content="https://jarrisoncano.github.io/Housecan/ASSETS/banner/banner.jpg" />
+		<!--  -->
+		<title>HOUSECAN | ENCUENTRA TU CASA AHORA</title>
+		<link rel="shortcut icon" href="./ASSETS/logo/favicon.png" type="image/x-icon" />
+		<!-- <link rel="stylesheet" href="./CSS/styles.css"> -->
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/98fd590bb6.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="bg-gray-200">
+		<div class="container mt-3 m-auto">
+			<header class="flex justify-between items-center">
+				<div class="flex items-center gap-5">
+					<img class="w-28" src="./ASSETS/logo/favicon.png" alt="Logo" />
+					<h1 class="font-bold text-xl text-gray-700">Housecan</h1>
+				</div>
+				<div class="flex gap-5">
+					<a
+						href="./index.html"
+						class="cursor-pointer p-1 px-5 h-max text-gray-700 rounded-md text-sm font-bold"
+					>
+						Inicio
+					</a>
+					<a
+						href="./viviendas.html"
+						class="cursor-pointer p-1 px-5 h-max text-gray-700 rounded-md text-sm font-bold"
+					>
+						Viviendas
+					</a>
+					<a
+						href="./contact.html"
+						class="cursor-pointer p-1 px-5 bg-green-500 h-max text-white rounded-md text-sm"
+					>
+						Contáctanos
+					</a>
+				</div>
+			</header>
+
+			<main class="mt-3">
+				<section class="mt-16 flex flex-col items-center">
+					<h2 class="font-extrabold text-gray-700 text-2xl text-center">Contáctanos</h2>
+					<p class="text-center">¿Tienes alguna duda? ¿Quieres saber más sobre nosotros? ¡Contáctanos!</p>
+
+					<div id="contactForm" class="w-2/6 mt-16 flex flex-col gap-4">
+						<label class="flex flex-col font-bold">
+							<p class="font-bold text-gray-600">Nombre:</p>
+							<input
+								type="text"
+								placeholder="Ingrese su nombre..."
+								class="h-10 rounded-md text-sm pl-2 font-light"
+							/>
+						</label>
+						<label class="flex flex-col font-bold">
+							<p class="font-bold text-gray-600">Correo:</p>
+							<input
+								type="email"
+								placeholder="example@example.com"
+								class="h-10 rounded-md text-sm pl-2 font-light"
+							/>
+						</label>
+						<label class="flex flex-col font-bold">
+							<p class="font-bold text-gray-600">Asunto:</p>
+							<textarea rows="4" cols="50" class="h-16 rounded-md text-sm pl-2 font-light"> </textarea>
+						</label>
+						<button class="cursor-pointer mt-5 py-3 bg-green-500 h-max text-white rounded-md text-sm">
+							Enviar
+						</button>
+					</div>
+				</section>
+			</main>
+			<footer class="mt-24 bg-black py-5 text-center">
+				<p class="text-white text-sm">COPYRIGHT© TODOS LOS DERECHOS RESERVADOS</p>
+			</footer>
+		</div>
+		<script src="./form.js"></script>
+	</body>
+</html>
