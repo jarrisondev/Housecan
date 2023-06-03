@@ -61,6 +61,7 @@
 							<p class="font-bold text-gray-600">Nombre:</p>
 							<input
 								type="text"
+								id="name"
 								placeholder="Ingrese su nombre..."
 								class="h-10 rounded-md text-sm pl-2 font-light"
 							/>
@@ -69,24 +70,33 @@
 							<p class="font-bold text-gray-600">Correo:</p>
 							<input
 								type="email"
+								id="email"
 								placeholder="example@example.com"
 								class="h-10 rounded-md text-sm pl-2 font-light"
 							/>
 						</label>
 						<label class="flex flex-col font-bold">
 							<p class="font-bold text-gray-600">Asunto:</p>
-							<textarea rows="4" cols="50" class="h-16 rounded-md text-sm pl-2 font-light"> </textarea>
+							<textarea id="subject" rows="4" cols="50" class="h-16 rounded-md pl-2 text-sm font-light">
+Estoy interesado en adquirir una vivienda... 
+							</textarea
+							>
 						</label>
-						<button class="cursor-pointer mt-5 py-3 bg-green-500 h-max text-white rounded-md text-sm">
+						<button
+							id="sendForm"
+							class="cursor-pointer mt-5 py-3 bg-green-500 h-max text-white rounded-md text-sm"
+						>
 							Enviar
 						</button>
 					</div>
 				</section>
 			</main>
-			<footer class="mt-24 bg-black py-5 text-center">
+			<footer class="mt-32 bg-black py-5 text-center">
 				<p class="text-white text-sm">COPYRIGHT© TODOS LOS DERECHOS RESERVADOS</p>
 			</footer>
 		</div>
+		<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
 		<script src="./form.js"></script>
 	</body>
 </html>
